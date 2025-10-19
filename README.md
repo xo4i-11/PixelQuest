@@ -29,7 +29,7 @@ To survive, players must balance offense and defense — mastering different wea
   Enemies actively track the player using the **Breadth-First Search (BFS)** algorithm, allowing them to navigate around walls and obstacles intelligently.
 
 - **Combat System:**  
-  Switch between different weapons (e.g., sword, bow, magic staff), each with unique attack styles and cooldowns.
+  Switch between different weapons, use shooting mechanics, and utilize items strategically.
 
 - **Health & Status Effects:**  
   - Healing restores lost health instantly or over time.  
@@ -68,15 +68,13 @@ Specifically, I wanted to:
 
 | Category | Technology |
 |-----------|-------------|
-| **Language** | C / C++ |
-| **Framework** | SDL2 (Simple DirectMedia Layer) |
-| **Rendering** | 2D tile-based rendering system |
-| **Pathfinding** | Breadth-First Search (BFS) |
-| **Game Architecture** | Entity-Component System (ECS)-like structure |
-| **Audio** | SDL_mixer for sound effects |
-| **Build System** | `Makefile` for compilation & asset linking |
-
-*(You can update this table if your implementation uses a different engine, like SFML, Unity, or Godot.)*
+| **Language** | Java |
+| **Build Tool** | Maven |
+| **Testing Framework** | JUnit |
+| **Paradigm** | Object-Oriented Programming (OOP) |
+| **Algorithms** | BFS Pathfinding for Enemy AI |
+| **Game Architecture** | Modular OOP-based design |
+| **Tools** | Git, GitHub |
 
 ---
 
@@ -84,10 +82,10 @@ Specifically, I wanted to:
 
 | Action | Key |
 |--------|-----|
-| Move | W / A / S / D |
-| Attack | Left Mouse Button |
-| Switch Weapon | 1 / 2 / 3 |
-| Heal | H |
+| Move | Mouse / Pointer |
+| Attack / Shoot | Space |
+| Switch Weapon | Tab |
+| Inventory Items | 1 / 2 / 3 / 4 / 5 |
 | Pause | ESC |
 
 ---
@@ -101,5 +99,5 @@ git clone https://github.com/<your-username>/PixelQuest.git
 # Enter the project directory
 cd PixelQuest
 
-# Build and run (for C/C++ with Make)
-make run
+# Build and run using Maven
+mvn clean compile exec:java
